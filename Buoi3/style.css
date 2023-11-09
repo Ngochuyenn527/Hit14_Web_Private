@@ -1,0 +1,42 @@
+*{ /* (*all) */
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/*<div class="container">
+  <div class="paragraph-container">
+    <p id="hola-id" class="hola-class">Hola World</p>
+    <p class="hello-class">Hello World</p>
+    <p class="hello-class again-class">Hello Again World</p>
+  </div>
+  <p class="outside-class">I'm outside</p>
+</div>
+
+*/
+
+/*Chọn element con qua element cha */
+.container .hello-class {
+    color: red;
+  }
+
+/* Chọn trực tiếp element con */
+.paragraph-container > .hello-class {
+    color: blue;
+  }
+  
+  /* Không hoạt động */
+  .container > .hello-class {
+    color: blue;
+  }
+
+/* Muốn nhiều element không liên quan có chung 1 style */
+.outside-class,
+.again-class,
+.hola-class {
+  color: purple;
+}
+/* Chọn element cụ thể khi có class tên giống nhau */
+.hello-class.again-class {
+    color: yellow;
+  }

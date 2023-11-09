@@ -1,0 +1,24 @@
+h1{
+    
+    width: 150px;
+    height: 50px;
+    background-color: bisque;
+    margin: auto;
+    text-align: center;
+    line-height: 50px;
+
+
+}
+
+
+
+button{
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 100px;
+}
+
+.button1{
+    margin-left:  43%;
+}
