@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.grid-container{
+    display: grid;
+    gap: 10px 50px;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2,160px);
+    
+}
+
+.grid-box{
+    /* width: 100px;
+    height: 100px; */
+    background-color: rgb(92, 49, 133);
+    /* margin: 20px; */
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+.grid-box:nth-child(1){
+    grid-row: 1/3;
+}
+
+
