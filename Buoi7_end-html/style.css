@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: black;
+    --red-color:#f44336;
+    --grey-color:#cccc;
+}
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: "lato", sans-serif;
+}
+
+header{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.nav li {
+    list-style: none;
+    padding: 15px 24px;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* cap2 */
+.nav li{
+    position: relative;
+}
+.nav-lv2 {
+    position: absolute;
+    width: 170px;
+    margin-top: 15px;
+    background-color: white;
+    left: 0;
+    display: none; 
+}
+.nav li:hover > .nav-lv2{
+    display: block;
+}
+.nav-lv2 li a{
+    color: black;
+}
+.nav-lv2 li{
+    padding: 10px 15px ;
+}
+.nav-lv2 li{
+    border-bottom: 1px solid #d4cccc;
+}
+.nav-lv2 li:hover{
+    border-bottom: 1px solid #585555;
+}
+
+.nav-lv2 li:last-child {
+    border: none;
+}
+
+.search > i{
+    padding: 15px 20px;
+    color: white;
+}
+
+/* hover đổi màu */
+.nav li:hover{
+    background-color: var(--grey-color);
+    color: var(--primary-color);
+}
+
+.search:hover i{
+    background-color: var(--red-color);
+}
+
+/* HOME */
+#home img{
+    width: 100%;
+    position: relative;
+}
+
+#home .infor {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    text-align:  center;
+    color: white;
+    left: 38%;
+    padding-bottom: 20px;
+}
+
+section{
+    padding-top: 100px;
+    text-align: center;
+    width: 900px;
+    margin: auto;
+    padding-bottom: 120px;
+}
+.heading{
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+    padding-bottom: 18px;
+}
+
+.title{
+    color: grey;
+    font-size: 0.9rem;
+    padding-bottom: 18px;
+}
+
+section p{
+    text-align: justify;
+    
+}
+.justify-center{
+    justify-content: space-around;
+    padding-top: 80px;
+}
+
+#band .item p{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#band .item img{
+    width: 140px;
+    border-radius: 5px;
+    
+}
+
+.tour{
+    width: 100%;
+    background-color: black;
+}
+#tour{
+    background-color: black;
+    color: white;
+}
+#tour li{
+    border: 1px;
+    padding: 10px 0px;
+    list-style: none;
+}
+
+#tour .sold-out{
+    color: white;
+    margin-left: 20px;
+    border: 1px solid var(--red-color) ;
+    background-color: var(--red-color);
+    font-size: 0.9rem;
+    padding: 2px 5px;
+
+}
+#tour .table p{
+    color: grey;
+    padding-left: 20px;
+}
+#tour .table{
+    background-color: white;
+    margin-bottom: 32px
+}
+#tour .table li {
+    border-bottom: 1px solid #d4cccc;
+}
+.number{
+    color: white;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.card-wrap .card{
+    width: 31%;
+    color: black;
+    height: 400px;
+    background-color: white;
+    text-align: justify;
+}
+
+.card img{
+    width: 100%;
+}
+.card .infor{
+    margin: 15px 20px;
+}
+.card .infor .local{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.card .infor .date{
+    color: grey;
+    margin-bottom: 15px;
+
+}
+.card .infor .btn{
+    margin-top: 15px;
+    color: white;
+    background-color: black;
+    border: 1px solid;
+    font-size: 0.9rem;
+    padding: 10px;
+    border-style:  inset ;
+}
+.card .infor .btn:hover{
+    color: black;
+    background-color: beige;
+    border-style: none;
+}
+
+
+/* Contact */
+#contact .flex{
+    justify-content: space-between;
+}
+
+#contact .left{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#contact .infor{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#contact .right{
+    width: 60%;
+}
+#contact .right .line-1{
+    display: flex;
+}
+
+#contact .right .line-1 input:first-child{
+    margin-right: 15px;
+}
+
+#contact .right input{
+        width: 100%;
+        border: 1px solid grey;
+        border-radius: 3px;
+        padding: 10px 10px;
+        margin-bottom: 20px;
+        font-size:1rem;
+        text-align: left ;
+}
+
+#contact button{
+    background-color:black;
+    color: #f2f3f5;
+    width: 80px;
+    padding: 15px 10px;
+    font-size: 1rem;
+    float: right;
+}
+
+#contact button:hover{
+    background-color: var(--grey-color);
+    color: black;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+.icons > i{
+    display: flex;
+    align-items: center; /* trên dưới */
+    justify-content: center; /*trái phải */
+    margin: 70px 3px;
+    font-size: 20px;
+    color: grey;
+}
+i:hover{
+    color: var(--grey-color);
+}
+footer p{
+    text-align: center;
+    margin-top: -50px;
+    color: grey;
+    font-size: 0.9rem;
+}
+footer p a{
+    color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
